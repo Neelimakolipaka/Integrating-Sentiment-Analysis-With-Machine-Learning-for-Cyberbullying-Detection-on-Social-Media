@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>About</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../static/plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="../static/plugins/themify-icons/themify-icons.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="../static/plugins/slick/slick.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="../static/plugins/Venobox/venobox.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="../static/plugins/aos/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link href="../static/css/style.css" rel="stylesheet">
+  <!-- Custom Zoom CSS for service images -->
+  <style>
+    .service-img-zoom {
+      cursor: pointer;
+      border-radius: 1rem;
+      transition: box-shadow 0.2s;
+    }
+    .service-img-zoom:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    }
+    /* Fullscreen modal styles */
+    #imgModal {
+      display: none;
+      position: fixed;
+      z-index: 3000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background: rgba(0,0,0,0.92);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.3s;
+    }
+    #imgModal.active {
+      display: flex;
+    }
+    #imgModal img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+      background: #fff;
+      padding: 1rem;
+      animation: zoomIn 0.3s;
+    }
+    #imgModal .close {
+      position: absolute;
+      top: 2.5rem;
+      right: 3rem;
+      color: #fff;
+      font-size: 3rem;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 10;
+      text-shadow: 0 2px 8px #000;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.7); opacity: 0.5; } to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../static/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- navigation -->
+<section class="fixed-top navigation">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/home"><span class="navbar-logo-text" style="font-size:2rem; font-weight:700; color:#ff512f; letter-spacing:1px;">CBD</span></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar -->
+      <div class="collapse navbar-collapse text-center" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../static/Notebook.html">Notebook</a>
+          </li>
+        </ul>
+        <a href="/" class="btn btn-primary ml-lg-3 primary-shadow">Sign Out</a>
+      </div>
+    </nav>
+  </div>
+</section>
+<!-- /navigation -->
+
+<!-- service -->
+<section class="section-lg service-bg-image position-relative" style="background-image: url(../static/images/backgrounds/service-page.png);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Model Evaluation & Data Insights</h2>
+                <p class="mb-100">Explore key metrics and visualizations that provide a comprehensive understanding of our dataset and the performance of our cyberbullying detection model.</p>
+            </div>
+            <!-- service item -->
+            <div class="col-sm-6 mb-4">
+                <div class="rounded bg-white p-4 shadow-primary text-center">
+                    <img src="../static/download.png" alt="Distribution of Data" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                    <h4 class="mb-2">Distribution of Data</h4>
+                    <p>This visualization shows how the data is distributed across different categories, helping to identify class imbalances and trends within the dataset.</p>
+                </div>
+            </div>
+            <!-- service item -->
+            <div class="col-sm-6 mb-4 translate-y-150">
+                <div class="rounded bg-white p-4 shadow-primary text-center">
+                    <img src="../static/download (1).png" alt="Overall Word Cloud of All Cleaned Text" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                    <h4 class="mb-2">Overall Word Cloud of All Cleaned Text</h4>
+                    <p>The word cloud highlights the most frequent and significant words in the cleaned dataset, offering insights into common themes and topics discussed.</p>
+                </div>
+            </div>
+            <!-- service item -->
+            <div class="col-sm-6 mb-4">
+                <div class="rounded bg-white p-4 shadow-primary text-center">
+                    <img src="../static/download (2).png" alt="Confusion Matrix" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                    <h4 class="mb-2">Confusion Matrix</h4>
+                    <p>The confusion matrix provides a detailed breakdown of the model's predictions, showing the number of correct and incorrect classifications for each class.</p>
+                </div>
+            </div>
+            <!-- service item -->
+            <div class="col-sm-6 mb-4 translate-y-150">
+                <div class="rounded bg-white p-4 shadow-primary text-center">
+                    <img src="../static/download (3).png" alt="Accuracy Score" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                    <h4 class="mb-2">Accuracy Score</h4>
+                    <p>Accuracy measures the overall correctness of the model by calculating the proportion of true results among the total number of cases examined.</p>
+                </div>
+            </div>
+            <!-- service item -->
+            <div class="col-sm-6 mb-4">
+                <div class="rounded bg-white p-4 shadow-primary text-center">
+                    <img src="../static/download (4).png" alt="Precision Score" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                    <h4 class="mb-2">Precision Score</h4>
+                    <p>Precision indicates how many of the items identified as positive by the model are actually positive, reflecting the model's ability to avoid false positives.</p>
+                </div>
+            </div>
+            <!-- service item -->
+            <div class="col-sm-6 mb-4 translate-y-150">
+                <div class="rounded bg-white p-4 shadow-primary text-center">
+                    <img src="../static/download (5).png" alt="Recall Score" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                    <h4 class="mb-2">Recall Score</h4>
+                    <p>Recall measures the model's ability to find all relevant cases within a dataset, indicating how well it identifies true positives.</p>
+                </div>
+            </div>
+             <!-- service item -->
+             <div class="col-sm-6 mb-4 translate-y-150">
+              <div class="rounded bg-white p-4 shadow-primary text-center">
+                  <img src="../static/download (6).png" alt="F1 Score" class="service-img-zoom" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 1rem;" onclick="showImgModal(this)">
+                  <h4 class="mb-2">F1 Score</h4>
+                  <p>The F1 score is the harmonic mean of precision and recall, providing a balanced metric that considers both false positives and false negatives.</p>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- background shapes -->
+    <img class="service-bg-1 up-down-animation" src="../static/images/background-shape/feature-bg-2.png" alt="">
+    <img class="service-bg-2 left-right-animation" src="../static/images/background-shape/seo-half-cycle.png" alt="">
+    <img class="service-bg-3 up-down-animation" src="../static/images/background-shape/team-bg-triangle.png" alt="">
+    <img class="service-bg-4 left-right-animation" src="../static/images/background-shape/green-dot.png" alt="">
+    <img class="service-bg-5 up-down-animation" src="../static/images/background-shape/team-bg-triangle.png" alt="">
+</section>
+<!-- /service -->
+
+<!-- footer -->
+<footer class="footer-section footer" style="background-image: url(../static/images/backgrounds/footer-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <!-- logo -->
+        <a class="navbar-brand" href="/home"><span class="navbar-logo-text" style="font-size:2rem; font-weight:700; color:#ff512f; letter-spacing:1px;">CBD</span></a>
+      </div>
+      <!-- footer menu -->
+      <nav class="col-lg-8 align-self-center mb-5">
+        <ul class="list-inline text-lg-right text-center footer-menu">
+          <li class="list-inline-item active"><a href="/home">Home</a></li>
+          <li class="list-inline-item"><a href="/about">About</a></li>
+          <li class="list-inline-item"><a href="../static/Notebook.html">Notebook</a></li>
+        </ul>
+      </nav>
+      <!-- footer social icon -->
+      <nav class="col-12">
+        <ul class="list-inline text-lg-right text-center social-icon">
+          <li class="list-inline-item">
+            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="black" href="#"><i class="ti-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery -->
+<script src="../static/plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="../static/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="../static/plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="../static/plugins/Venobox/venobox.min.js"></script>
+<!-- aos -->
+<script src="../static/plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="../static/js/script.js"></script>
+
+<!-- Fullscreen Image Modal -->
+<div id="imgModal" onclick="closeImgModal(event)">
+  <span class="close" onclick="closeImgModal(event)">&times;</span>
+  <img id="imgModalContent" src="" alt="Service Fullscreen Image">
+</div>
+<script>
+function showImgModal(img) {
+  var modal = document.getElementById('imgModal');
+  var modalImg = document.getElementById('imgModalContent');
+  modalImg.src = img.src;
+  modalImg.alt = img.alt;
+  modal.classList.add('active');
+}
+function closeImgModal(e) {
+  if (e.target.classList.contains('close') || e.target.id === 'imgModal') {
+    document.getElementById('imgModal').classList.remove('active');
+  }
+}
+// Optional: ESC key closes modal
+window.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    document.getElementById('imgModal').classList.remove('active');
+  }
+});
+</script>
+
+</body>
+</html>

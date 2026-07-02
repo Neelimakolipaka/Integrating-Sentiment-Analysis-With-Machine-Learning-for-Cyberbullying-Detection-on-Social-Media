@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <title>Sign In - CBD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/plugins/themify-icons/themify-icons.css">
+  <link href="../static/css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../static/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-auth">
+  <header class="py-4 text-center">
+    <a class="navbar-brand" href="/home"><span class="navbar-logo-text">CBD</span></a>
+  </header>
+  <div class="signin-container">
+    <div class="signin-card">
+      <h3 class="text-center mb-4 font-weight-bold">Sign In</h3>
+      {% if message %}
+      <div class="alert alert-danger text-center">{{ message }}</div>
+      {% endif %}
+      <form action="/signin" method="POST">
+        <div class="form-group">
+          <label for="user">Username</label>
+          <input type="text" class="form-control" id="user" name="user" placeholder="Enter username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="btn btn-block font-weight-bold" style="background:linear-gradient(90deg,#ff512f 0%,#dd2476 100%); color:#fff; border:none; font-size:1.1rem; border-radius:2rem;">Sign In</button>
+      </form>
+      <div class="text-center mt-3">
+        <span>Don't have an account? <a href="/signup" style="color:#2575fc; font-weight:600;">Sign Up</a></span>
+      </div>
+    </div>
+  </div>
+  <script src="../static/plugins/jQuery/jquery.min.js"></script>
+  <script src="../static/plugins/bootstrap/bootstrap.min.js"></script>
+</body>
+</html> 

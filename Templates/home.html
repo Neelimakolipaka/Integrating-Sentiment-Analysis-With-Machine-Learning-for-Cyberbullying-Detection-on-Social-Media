@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../static/plugins/bootstrap/bootstrap.min.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="../static/plugins/themify-icons/themify-icons.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="../static/plugins/slick/slick.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="../static/plugins/Venobox/venobox.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="../static/plugins/aos/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link href="../static/css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../static/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- navigation -->
+<section class="fixed-top navigation">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/home"><span class="navbar-logo-text" style="font-size:2rem; font-weight:700; color:#ff512f; letter-spacing:1px;">CBD</span></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar -->
+      <div class="collapse navbar-collapse text-center" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../static/Notebook.html">Notebook</a>
+          </li>
+        </ul>
+        <a href="/" class="btn btn-primary ml-lg-3 primary-shadow">Sign Out</a>
+      </div>
+    </nav>
+  </div>
+</section>
+<!-- /navigation -->
+
+<!-- hero area -->
+<section class="hero-section hero" data-background="" style="background-image: url(../static/images/hero-area/banner-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center zindex-1">
+        <h1 class="mb-3">Integrating Sentiment Analysis With Machine Learning<br>for Cyberbullying Detection on Social Media</h1>
+        <p class="mb-4">A modern solution to identify and prevent cyberbullying using advanced sentiment analysis and machine learning models on social media content.</p>
+        <a href="#prediction" class="btn btn-secondary btn-lg">explore us</a>
+      </div>
+    </div>
+  </div>
+  <!-- background shapes -->
+  <div id="scene">
+    <img class="img-fluid hero-bg-1 up-down-animation" src="../static/images/background-shape/feature-bg-2.png" alt="">
+    <img class="img-fluid hero-bg-2 left-right-animation" src="../static/images/background-shape/seo-ball-1.png" alt="">
+    <img class="img-fluid hero-bg-3 left-right-animation" src="../static/images/background-shape/seo-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-4 up-down-animation" src="../static/images/background-shape/green-dot.png" alt="">
+    <img class="img-fluid hero-bg-5 left-right-animation" src="../static/images/background-shape/blue-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-6 up-down-animation" src="../static/images/background-shape/seo-ball-1.png" alt="">
+    <img class="img-fluid hero-bg-7 left-right-animation" src="../static/images/background-shape/yellow-triangle.png" alt="">
+    <img class="img-fluid hero-bg-8 up-down-animation" src="../static/images/background-shape/service-half-cycle.png" alt="">
+    <img class="img-fluid hero-bg-9 up-down-animation" src="../static/images/background-shape/team-bg-triangle.png" alt="">
+  </div>
+</section>
+<!-- /hero-area -->
+
+<div class="row contact-bg p-5 rounded mb-5 justify-content-center d-flex"  id="prediction">
+    <div class="col-lg-7 mb-4 mb-lg-0 d-flex justify-content-center">
+        <div class="w-100" style="max-width:650px; background:#fff; border-radius:1.7rem; box-shadow:0 8px 32px rgba(0,0,0,0.16); border:2px solid #2575fc; padding:2.7rem 2.2rem; color:#333;">
+            <h3 class="text-center mb-4 font-weight-bold" style="font-size:1.45rem; letter-spacing:0.5px;">Enter your message for cyberbullying detection</h3>
+            <form action="/predict" method="POST">
+                <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message" style="min-height:120px; font-size:1.1rem; border-radius:1rem;"></textarea>
+                <button type="submit" value="send" class="btn btn-block font-weight-bold" id="submit-message" style="background:linear-gradient(90deg,#ff512f 0%,#dd2476 100%); color:#fff; border:none; font-size:1.15rem; padding:0.7rem 0; border-radius:2rem; box-shadow:0 2px 8px rgba(221,36,118,0.12);">SUBMIT MESSAGE</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- feature -->
+<section class="section feature pt-0 mb-0" id="feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Key Features</h2>
+        <p class="mb-100">- Real-time detection of cyberbullying<br>- Sentiment analysis integration<br>- Multi-model machine learning approach<br>- Scalable for large social media datasets</p>
+      </div>
+      <!-- feature item -->
+      <div class="col-md-6 mb-80">
+        <div class="d-flex feature-item">
+          <div>
+            <i class="ti-ruler-pencil feature-icon mr-4"></i>
+          </div>
+          <div>
+            <h4>Advanced Sentiment Analysis</h4>
+            <p>Utilizes state-of-the-art NLP techniques to analyze the sentiment of social media posts for early detection of harmful content.</p>
+          </div>
+        </div>
+      </div>
+      <!-- feature item -->
+      <div class="col-md-6 mb-80">
+        <div class="d-flex feature-item">
+          <div>
+            <i class="ti-layout-cta-left feature-icon mr-4"></i>
+          </div>
+          <div>
+            <h4>Multi-Model Machine Learning</h4>
+            <p>Combines multiple machine learning models to improve the accuracy and robustness of cyberbullying detection.</p>
+          </div>
+        </div>
+      </div>
+      <!-- feature item -->
+      <div class="col-md-6 mb-80">
+        <div class="d-flex feature-item">
+          <div>
+            <i class="ti-split-v-alt feature-icon mr-4"></i>
+          </div>
+          <div>
+            <h4>Real-Time Monitoring</h4>
+            <p>Monitors social media streams in real time to quickly identify and flag potential cyberbullying incidents.</p>
+          </div>
+        </div>
+      </div>
+      <!-- feature item -->
+      <div class="col-md-6 mb-80">
+        <div class="d-flex feature-item">
+          <div>
+            <i class="ti-layers-alt feature-icon mr-4"></i>
+          </div>
+          <div>
+            <h4>Customizable Integration</h4>
+            <p>Easily integrates with various social media platforms and adapts to different requirements and data sources.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="feature-bg-1 up-down-animation" src="../static/images/background-shape/feature-bg-1.png" alt="bg-shape">
+  <img class="feature-bg-2 left-right-animation" src="../static/images/background-shape/feature-bg-2.png" alt="bg-shape">
+</section>
+<!-- /feature -->
+
+
+<!-- footer -->
+<footer class="footer-section footer" style="background-image: url(../static/images/backgrounds/footer-bg.png);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center text-lg-left mb-4 mb-lg-0">
+        <!-- logo -->
+        <a class="navbar-brand" href="/home"><span class="navbar-logo-text" style="font-size:2rem; font-weight:700; color:#ff512f; letter-spacing:1px;">CBD</span></a>
+      </div>
+      <!-- footer menu -->
+      <nav class="col-lg-8 align-self-center mb-5">
+        <ul class="list-inline text-lg-right text-center footer-menu">
+          <li class="list-inline-item active"><a href="/home">Home</a></li>
+          <li class="list-inline-item"><a href="/about">About</a></li>
+          <li class="list-inline-item"><a href="../static/Notebook.html">Notebook</a></li>
+        </ul>
+      </nav>
+      <!-- footer social icon -->
+      <nav class="col-12">
+        <ul class="list-inline text-lg-right text-center social-icon">
+          <li class="list-inline-item">
+            <a class="facebook" href="#"><i class="ti-facebook"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="twitter" href="#"><i class="ti-twitter-alt"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="linkedin" href="#"><i class="ti-linkedin"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="black" href="#"><i class="ti-github"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- Prediction Modal -->
+{% if type %}
+<div class="modal fade show" id="predictionModal" tabindex="-1" role="dialog" aria-labelledby="predictionModalLabel" aria-modal="true" style="display: block; background: rgba(0,0,0,0.7);">
+  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 600px;">
+    <div class="modal-content shadow-lg animate__animated animate__zoomIn animate__faster" style="border-radius: 2rem; overflow: hidden;">
+      <div class="modal-header bg-gradient-primary text-white animate__animated animate__fadeInDown" style="background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%); min-height: 70px; padding-top: 1rem; padding-bottom: 1rem;">
+        <h5 class="modal-title font-weight-bold" id="predictionModalLabel" style="font-size: 1.4rem; letter-spacing: 1px;">
+          <i class="ti-bolt mr-2 animate__animated animate__flash animate__infinite" style="font-size: 1.6rem;"></i>Cyberbullying Detection Result
+        </h5>
+        <a href="/home" class="close text-white" aria-label="Close" style="font-size: 2.5rem;">
+          <span aria-hidden="true">&times;</span>
+        </a>
+      </div>
+      <div class="modal-body animate__animated animate__fadeInUp animate__faster" style="padding: 1.5rem 2rem 1.2rem 2rem;">
+        <div class="text-center mb-4">
+          <span class="badge badge-pill p-3 px-5 mb-3 shadow-lg" id="cyberbullyingType" style="font-size: 1.6rem; letter-spacing: 1.5px; background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%); color: #fff;">Type: {{ type }}</span>
+        </div>
+        <div class="alert alert-warning animate__animated animate__pulse animate__infinite" id="cyberbullyingAlert" style="font-size: 1.35rem; border-width: 2px; background: #fffbe6; color: #b85d1c;">
+          <i class="ti-alert mr-2" style="font-size: 1.5rem;"></i>{{ alert }}
+        </div>
+        <div class="mb-3 mt-4" id="cyberbullyingInfo" style="font-size: 1.25rem; color: #333;">
+          <strong>Info:</strong> {{ info }}
+        </div>
+        {% if topic_label is not none and topic_keywords is not none %}
+        <div class="mt-4 p-3 rounded" style="background:#f7f8fa; border:1.5px solid #2575fc;">
+          <h5 class="font-weight-bold mb-2" style="color:#2575fc;">Topic Modeling Result</h5>
+          <div style="font-size:1.1rem; color:#333;">
+            <strong>Top Keywords:</strong>
+            {% for word in topic_keywords[:5] %}
+              <span class="badge badge-pill" style="background:linear-gradient(90deg,#2575fc 0%,#6a11cb 100%); color:#fff; font-size:1rem; margin:0 0.2rem 0.2rem 0; padding:0.5em 1em;">{{ word }}</span>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <div class="modal-footer animate__animated animate__fadeInUp animate__faster" style="padding: 1rem 2rem;">
+        <a href="/home" class="btn btn-lg shadow font-weight-bold" style="background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%); color: #fff; font-size: 1.3rem; border-radius: 2rem; padding: 0.75rem 2.5rem;">Close</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Loader Overlay -->
+<div id="loader-overlay" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(255,255,255,0.92); z-index:2000; align-items:center; justify-content:center;">
+  <div class="d-flex flex-column align-items-center">
+    <div class="spinner-border" style="width: 5rem; height: 5rem; color: #ff512f; border-width: 0.5rem;" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="mt-4 font-weight-bold animate__animated animate__fadeIn animate__infinite" style="font-size:1.7rem; color: #dd2476; letter-spacing: 1px;">Analyzing your message...</div>
+  </div>
+</div>
+
+<!-- jQuery -->
+<script src="../static/plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="../static/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="../static/plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="../static/plugins/Venobox/venobox.min.js"></script>
+<!-- aos -->
+<script src="../static/plugins/aos/aos.js"></script>
+<!-- Main Script -->
+<script src="../static/js/script.js"></script>
+
+<!-- Animate.css for modal animation -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<script>
+// Loader logic
+const form = document.querySelector('form[action="/predict"]');
+const loader = document.getElementById('loader-overlay');
+if(form && loader) {
+  form.addEventListener('submit', function(e) {
+    loader.style.display = 'flex';
+  });
+}
+// Hide loader if modal is shown (in case of back navigation)
+window.addEventListener('DOMContentLoaded', function() {
+  if(document.getElementById('predictionModal')) {
+    loader.style.display = 'none';
+  }
+});
+</script>
+
+</body>
+</html>
